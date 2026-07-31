@@ -1,1 +1,1 @@
-# template-solo-rust
+# Rust project
