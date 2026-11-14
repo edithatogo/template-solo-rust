@@ -10,15 +10,27 @@ This repository is designed for one maintainer. Automated checks are required;
 no second reviewer, CODEOWNERS approval, team membership, or mandatory human
 approval is introduced.
 
-## Start here
+## Usage
 
-1. Replace `replace-me` in `Cargo.toml`.
-2. Run `cargo fmt --check`.
-3. Run `cargo test --all-features`.
+Choose **Use this template** to create a Rust library, then follow the
+[adoption checklist](BOOTSTRAP.md). The initial library exposes
+`replace_me::ready()` and a smoke test. Replace that example with the project's
+API and behaviour tests.
+
+1. Replace `replace-me` in `Cargo.toml` and update crate references.
+2. Run `cargo fmt --all --check`.
+3. Run `cargo clippy --workspace --all-targets --all-features -- -D warnings`.
+4. Run `cargo test --all-features`.
 
 ## Development
 
-CI checks formatting, lints with warnings denied, runs tests, and uploads real coverage through Codecov OIDC.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for setup and validation commands, and
+[BOOTSTRAP.md](BOOTSTRAP.md) for the adoption checklist.
+
+The pinned shared CI checks formatting, runs Clippy with warnings denied and
+uses cargo-llvm-cov to run tests and collect coverage. It is configured to
+upload LCOV through Codecov OIDC. Verify provider activation and an actual
+upload in each generated repository.
 
 ## Versioning
 
@@ -30,9 +42,9 @@ This starts as a passive library. It may emit `tracing` events when warranted, b
 
 ## Security
 
-Report vulnerabilities privately through GitHub Security Advisories. See
-[SECURITY.md](SECURITY.md); do not disclose credentials or sensitive source data
-in a public issue.
+Follow [SECURITY.md](SECURITY.md) for private reporting and the safe contact
+fallback if GitHub's **Report a vulnerability** option is unavailable. Do not
+include credentials, sensitive source data or exploit details in public issues.
 
 ## Citation
 
