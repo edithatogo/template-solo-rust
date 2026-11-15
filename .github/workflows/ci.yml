@@ -5,4 +5,4 @@ permissions:
   id-token: write
 jobs:
   ci:
-    uses: edithatogo/repository-standards/.github/workflows/rust-ci.yml@ad67bedaa0c4d0769bd54fd76354bac65b25b88c # main
+    uses: edithatogo/repository-standards/.github/workflows/rust-ci.yml@ed8070a3d95364b00d197471378febc46ff1ec87 # main
