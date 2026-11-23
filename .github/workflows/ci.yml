@@ -7,4 +7,4 @@ jobs:
   ci:
     uses: edithatogo/repository-standards/.github/workflows/rust-ci.yml@e6425228dea09637eb0a45a3787421e7bce42b3b # main
   supply-chain:
-    uses: edithatogo/repository-standards/.github/workflows/rust-dependency-policy.yml@e1e606f2689ac3e2cf472c01cb207cce367d423d # v1 pilot
+    uses: edithatogo/repository-standards/.github/workflows/rust-dependency-policy.yml@3fa29fff49268393e427ca3043fb6e1f0e49f877 # v1 pilot
